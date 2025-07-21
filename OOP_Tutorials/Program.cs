@@ -57,6 +57,31 @@ namespace OOP_Tutorials
             #endregion
 
 
+            #region Customer
+
+            Customer customer1 = new IndividualCustomer 
+            {
+                Id = 1,
+                CustomerNo = "134567890",
+                Name = "Hüseyin",
+                Surname ="Şalem",
+               
+            };
+            Customer customer2 = new CorporateCustomer
+            {
+                Id = 2,
+                CustomerNo = "9876543210",
+                FirmName = "Csharp",
+                TaxNo = "?",
+            };
+
+            CustomerManager customerManager = new CustomerManager();
+            customerManager.Ekle(customer1);
+           
+            Console.WriteLine(customer1.CustomerNo);
+
+            #endregion
+
 
 
 
