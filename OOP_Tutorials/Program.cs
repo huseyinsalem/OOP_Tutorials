@@ -38,6 +38,7 @@ namespace OOP_Tutorials
 
 
 
+
             #region List
 
             Console.WriteLine("-----------");
@@ -57,8 +58,12 @@ namespace OOP_Tutorials
             #endregion
 
 
+
+
             #region Customer
 
+
+            Console.WriteLine("----------");
             Customer customer1 = new IndividualCustomer 
             {
                 Id = 1,
@@ -82,6 +87,28 @@ namespace OOP_Tutorials
 
             #endregion
 
+
+
+
+
+            #region interface
+
+            Console.WriteLine("----------");
+
+
+            PersonalLoanManager personalLoanManager = new PersonalLoanManager();
+           
+            HousingLoanManager housingLoanManager = new HousingLoanManager();
+  
+            VehicleLoanManager vehicleLoanManager = new VehicleLoanManager();
+            
+
+
+            ApplicationManager applicationManager = new ApplicationManager();
+            applicationManager.BasvuruYap(housingLoanManager);
+
+
+            #endregion
 
 
 
